@@ -13,5 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','PlacaController@index');
+Route::get('/','PlacaController@ventana');
+Route::get('/es','PlacaController@ventana');
+
 Route::post('/Verificar','PlacaController@Verificar');
+
+Route::get('/en','PlacaController@index');

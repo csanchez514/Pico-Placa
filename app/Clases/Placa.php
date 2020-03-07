@@ -10,11 +10,9 @@ class Placa
     
     Public function SetDatos ($Placa_entrada, $Hora_entrada, $Fecha_entrada)
     {
-        
         $this->placa = $Placa_entrada;
         $this->fecha = $Fecha_entrada;
         $this->hora = $Hora_entrada;
-
     }
     public function VerDia()
     {
@@ -66,7 +64,7 @@ class Placa
             {
                 $diasemana = $this->VerDia();
                 $NumPlaca = substr($this->placa,-1);
-
+                //Dependiendo del día de la semana se restringe la circulación por medio del último dígito de la placa
                 switch ($diasemana) {
                     case 'Lunes':
                         if($NumPlaca== 1 or $NumPlaca== 2){
