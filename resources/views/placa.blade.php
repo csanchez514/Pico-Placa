@@ -57,7 +57,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">PLACA</label>
                                     <input type="text" class="form-control" id="placa" name="placa" pattern= "[a-zA-Z]{3}[-][0-9]{3}|[a-zA-Z]{3}[-][0-9]{4}"
-                                         placeholder="XXX-999 o XXX-9999" maxlength="8">
+                                         placeholder="XXX-999 o XXX-9999" maxlength="8"  required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">HORA</label>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">FECHA </label>
-                                    <input type="date" value="2020-01-01" min="1900-01-01"  class="form-control" id="fecha"name="fecha"
+                                    <input type="date" value="2020-01-01" min="1900-01-01"  class="form-control" id="fecha"name="fecha" required
                                         placeholder="Ingresar Fecha Nacimiento">
                                 </div>
                                 <div class="form-group">
