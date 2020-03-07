@@ -1,8 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
 
-use App\Placa;
+use App\Clases\Placa;
 use Illuminate\Http\Request;
 
 class PlacaController extends Controller
@@ -14,7 +13,21 @@ class PlacaController extends Controller
      */
     public function index()
     {
-        //
+        return view('placa');
+    }
+    public function Verificar(Request $request)
+    {
+        $placa = new Placa();
+       
+
+        $placa -> SetDatos($request->input('placa'),$request->input('hora'),$request->input('fecha'));
+        if ($placa-> VerRestriccion()) {
+            echo('El vehículo está en pico y placa');
+        }
+        else{
+            echo('El vehículo no está en pico y placa');
+        }
+       
     }
 
 }
