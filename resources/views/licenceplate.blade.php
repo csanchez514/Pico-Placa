@@ -39,9 +39,10 @@
     <div class="form-row">
         <div class="container">
             <div class="table-wrapper ">
+            <a href="/es"> Español</a>
                 <div class="table-title">
                     <div class="col-sm-12">
-                     <a href="/es">Español</a>
+                    
                         <h2>PICO Y <b>PLACA</b></h2>
                     </div>
                     <div class="col-sm-8">
